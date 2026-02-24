@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://0nci2un644po"]
+
+[ext_resource type="PackedScene" uid="uid://cxyxv65qf30qo" path="res://scenes/player.tscn" id="1_uwrxv"]
+
+[node name="Game" type="Node2D" unique_id=422072027]
+
+[node name="player" parent="." unique_id=1742211817 instance=ExtResource("1_uwrxv")]
+position = Vector2(20, 31)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=437338192]
+position = Vector2(22, -34)
+zoom = Vector2(4, 4)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=16263155]
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="TileMapLayer" unique_id=328549514]
+show_behind_parent = true
+collision_enabled = false
